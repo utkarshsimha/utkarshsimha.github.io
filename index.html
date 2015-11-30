@@ -2,12 +2,14 @@
 <head>
     <title> Utkarsh Simha's page </title>
     <script type="text/javascript">
-        var p = document.createElement("p");
-        p.innerHTML = "This site is under developement";
-        document.body.appendChild( p );
+        function onLoad() {
+            var p = document.createElement("p");
+            p.innerHTML = "This site is under developement";
+            document.body.appendChild( p );
+        }
     </script>
 </head>
-<body>
+<body onload="onLoad()">
     <h2> Hello, welcome to Utkarsh Simha's page </h2>
 </body>
 </html>
