@@ -563,7 +563,7 @@ ul.social-buttons li a:active { background-color: #7200e6 }
     margin-bottom: 15px;
     font-size: 3em;
 }
-.portfolio-modal .modal-content p { margin-bottom: 30px }
+.portfolio-modal .modal-content p { margin-bottom: 10px }
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -620,7 +620,30 @@ img::selection { background: 0 0 }
 img::-moz-selection { background: 0 0 }
 body { webkit-tap-highlight-color: #7200e6 }
 
-.img-responsive {
+.mymod {
   height:300px;
   width:400px;
+}
+
+#modal1 {
+  font-family: Lato;
+  font-size: 18px;
+}
+.carousel-control
+{
+  background-size: 0%;
+}
+blockquote p:before {
+    content: open-quote;
+    font-weight: bold;
+}
+blockquote p:after {
+    content: close-quote;
+    font-weight: bold;
+}
+
+.item {
+  /*border: 2px solid blue;*/
+  /*height: 500px;*/
+  /*width: 100%;*/
 }
