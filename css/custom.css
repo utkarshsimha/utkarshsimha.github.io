@@ -655,7 +655,7 @@ blockquote p:after {
     font-weight: bold;
 }
 div.item.col-sm-12 {
-  height: 600px;
+  /*height: 600px;*/
 }
 .item {
   /*border: 2px solid blue;*/
