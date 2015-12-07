@@ -629,10 +629,23 @@ body { webkit-tap-highlight-color: #7200e6 }
   font-family: Lato;
   font-size: 18px;
 }
-.carousel-control
+/*.carousel-control
 {
   background-size: 0%;
+}*/
+
+.carousel-control.right {
+  /*background-size: 0%;*/
+  background-image: url("");
+  width:5%;
 }
+
+.carousel-control.left {
+  /*background-size: 0%;*/
+  background-image: url("");
+  width:5%;
+}
+
 blockquote p:before {
     content: open-quote;
     font-weight: bold;
@@ -641,9 +654,16 @@ blockquote p:after {
     content: close-quote;
     font-weight: bold;
 }
-
+div.item.col-sm-12 {
+  height: 600px;
+}
 .item {
   /*border: 2px solid blue;*/
   /*height: 500px;*/
   /*width: 100%;*/
+}
+
+.interests{
+  font-size: 20px;
+  font-family: 'Courgette', cursive;
 }
