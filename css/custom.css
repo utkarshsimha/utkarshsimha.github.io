@@ -14,11 +14,11 @@ a:hover,
 a:focus,
 a:active,
 a.active { outline: 0 }
-a { color: #7200e6 }
+a { color: #1a1aff }
 a:hover,
 a:focus,
 a:active,
-a.active { color: #fec503 }
+a.active { color: #1a1aff }
 h1,
 h2,
 h3,
@@ -34,8 +34,8 @@ h6 {
 .bg-darkest-gray { background-color: #222 }
 .btn-primary {
     color: #fff;
-    background-color: #7200e6;
-    border-color: #7200e6;
+    background-color: #0000ff;
+    border-color: #0000ff;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -46,8 +46,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: ;
-    background-color: #fec503;
-    border-color: #f6bf01;
+    background-color: #000099;
+    border-color: #000099;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -67,8 +67,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    background-color: #7200e6;
-    border-color: #7200e6;
+    background-color: #0000ff;
+    border-color: #0000ff;
 }
 .btn-primary .badge {
     color: #7200e6;
@@ -76,8 +76,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
     color: #fff;
-    background-color: #7200e6;
-    border-color: #7200e6;
+    background-color: #0000ff;
+    border-color: #0000ff;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -91,8 +91,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
     color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01;
+    background-color: #000099;
+    border-color: #000099;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -482,7 +482,7 @@ section#contact .form-group textarea { padding: 20px }
 section#contact .form-group input.form-control { height: auto }
 section#contact .form-group textarea.form-control { height: 236px }
 section#contact .form-control:focus {
-    border-color: #7200e6;
+    border-color: #;
     box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
@@ -610,15 +610,15 @@ ul.social-buttons li a:active { background-color: #7200e6 }
 }
 ::-moz-selection {
     text-shadow: none;
-    background: #7200e6;
+    background: #4d79ff;
 }
 ::selection {
     text-shadow: none;
-    background: #7200e6;
+    background: #4d79ff;
 }
 img::selection { background: 0 0 }
 img::-moz-selection { background: 0 0 }
-body { webkit-tap-highlight-color: #7200e6 }
+body { webkit-tap-highlight-color: #4d79ff }
 
 .mymod {
   height:300px;
@@ -637,12 +637,14 @@ body { webkit-tap-highlight-color: #7200e6 }
 .carousel-control.right {
   /*background-size: 0%;*/
   background-image: url("");
+  
   width:5%;
 }
 
 .carousel-control.left {
   /*background-size: 0%;*/
   background-image: url("");
+
   width:5%;
 }
 
