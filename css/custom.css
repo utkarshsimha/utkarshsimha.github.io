@@ -1,4 +1,4 @@
-body {
+body, .container {
     background-color: #f2f2f2;
     margin: 0 auto;
     max-width: 60em;
