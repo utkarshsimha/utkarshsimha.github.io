@@ -1,7 +1,7 @@
 body, .container {
     background-color: #f2f2f2;
     margin: 0 auto;
-    max-width: 60em;
+    max-width: 70em;
     font-family: "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     padding: 4em 1em;
@@ -9,15 +9,11 @@ body, .container {
 }
 
 p {
-    font-size: 15px;
+    /*font-size: 15px;*/
 }
 
 h2 {
     color: #002db3;
-}
-
-h3,h4 {
-    padding-top: 1em;
 }
 
 .right {
@@ -36,4 +32,8 @@ h3,h4 {
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+}
+
+* {
+  font-size: 105%;
 }
