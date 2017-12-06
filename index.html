@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="js/custom.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Personal website of Utkarsh Simha">
@@ -13,7 +14,7 @@
         <link rel="stylesheet" href="css/custom.css">
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
+        
 
     </head>
 
@@ -27,6 +28,7 @@
               <li><a href="#publications">Publications</a></li>
               <li><a href="#courses">Courses</a></li>
               <li><a href="#research-projects">Research Projects</a></li>
+              <li><a href="#other-projects">Other Projects</a></li>
               <li><a href="#hobbies">Hobbies</a></li>
             </ul>
           </div>
@@ -44,6 +46,8 @@
                         <strong> usimha (at) ucsd (dot) edu </strong>
                         <br/>
                         <strong> utkarshsimha (at) gmail (dot) com </strong>
+                        <br/>
+                        <a href="files/utkarshsimha_resume.pdf" target="_blank">Resume</a>
                     </p>
                 </div>
                 <div class="col-sm-4 pad-top">
@@ -63,8 +67,8 @@
                     I am a grad student at UC San Diego pursuing my Master's in Computer Science, specializing
                     in Machine Learning and Artificial Intelligence <br/>
                     I received my Bachelor's in Computer Science and Engineering from
-                    <a href="http://pes.edu" target="_blank"> PES Institute of Technology, Bangalore. </a> You can find further
-                    details in my <a href="files/utkarshsimha_resume.pdf" target="_blank">resume</a>
+                    <a href="http://pes.edu" target="_blank"> PES Institute of Technology, Bangalore. </a> <br/>
+                    I'm very passionate about machine learning and artificial intelligence, specifically in neural networks, deep learning, natural language processing and speech recognition.
                 </p>
             </div>
 
@@ -75,11 +79,11 @@
                     <li>
                         <h4> IBM Research, Yorktown Heights:</h4>
                         <p>
-                            Interning at the
+                            Interned at the
                             <a href="https://www.research.ibm.com/cognitive-computing/index.shtml" target="_blank"> Cognitive Computing department
                             </a> at TJ Watson Research Center during summer 2017.
                             Built a data collection pipeline to collect meta-information about machine learning models from an automated data science 
-                            service. Performing meta-learning on the collected data to find the best subset of machine laerning models to ensemble
+                            service. Performed dimensionality reduction and feature-selection on the collected data to find the best subset of machine laerning models to ensemble
                         </p>
                     </li>
                     <li>
@@ -128,26 +132,33 @@
             <div id="courses" class="row">
                 <br/><br/>
                 <h3> Courses </h3>
-                (Click on the course more details)
                 <ul style="list-style-type: square;">
                     <li>
-                        <a href="courses/cse250b.html"> Learning Algorithms: CSE 250B </a>
+                        CSE 250A: Intro to AI: Probablistic Reasoning &amp; Decision Making
                     </li>
                     <li>
-                        <a href="courses/cse250a.html"> Probabilistic Reasoning &amp; Decision Making: CSE 250A </a>
+                        CSE 250B: Learning Algorithms
                     </li>
                     <li>
-                        <a href="courses/cse291h.html"> Convex Optimization: CSE 291H </a>
-                        
+                        CSE 291H: Convex Optimization
                     </li>
                     <li>
-                        <a href="courses/cse258.html"> Web mining and recommender systems: CSE 258 </a>
+                        CSE 258: Web mining and recommender systems
                     </li>
                     <li>
-                        <a href="courses/cse258.html"> Advanced Statistical Natural Language Processing: CSE 291 </a>
+                        CSE 291: Advanced Statistical Natural Language Processing
                     </li>
                     <li>
-                        <a href="courses/cse258.html"> Machine Learning Theory: CSE 250C </a>
+                        CSE 250C: Machine Learning Theory
+                    </li>
+                    <li>
+                        CSE 202: Algorithms Design &amp; Analysis
+                    </li>
+                    <li>
+                        Teaching Assistantship - CSE 253: Neural Networks for Pattern Recognition 
+                    </li>
+                    <li>
+                        Teaching Assistantship - CSE 190: Neural Networks/Deep Learning
                     </li>
                 </ul>
             </div>
@@ -155,8 +166,66 @@
             <div id="research-projects" class="row">
                 <br/><br/>
                 <h3> Research Projects </h3>
-                
-                
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4> Dimensionality Estimation (Master's thesis):</h4>
+                        <ul>
+                            <li> The project aims at estimating the intrinsic dimensionality of the low-dimensional manifold of a given dataset </li>
+                            <li> For example, given a very high dimension (say 1024x1024) pictures of a teapot turning on a turntable, we want to find the axis of rotation (which is a 2-D circle). </li>
+                            <li> For this, we use a statisical method based on the initialization used by KMeans++ and scale it for huge amounts of data on Apache Spark. </li>
+                            <li> Code for this can be found <a href="https://github.com/utkarshsimha/dimensionality-estimation">here </a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4> Automated question generation based on lecture transcripts:</h4>
+                        <ul>
+                            <li> The project aims at generating objective type questions for video lectures </li>
+                            <li> Explored various techniques that might work for this task, including Latent Dirichlet Allocation and Recurrent Neural Networks</li>
+                            <li> Used part-of-speech and named-entity-recognition taggers to identify specific parts of the sentences, and used a knowledge graph (ConceptNet) to generate the questions </li>
+                            <li> Code for this can be found <a href="https://github.com/utkarshsimha/Project-Acme">here </a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4> Deep Neural Networks for speech recognition </h4>
+                        <ul>
+                            <li> The project aims at using deep neural networks for the task of automatic speech recognition </li>
+                            <li> Tried various architectures such as vanilla feed-forward neural networks, end-to-end recurrent neural networks etc. </li>
+                            <li> The final architecture was based on a end-to-end recurrent neural network which uses Connectionist Temporal Classification (CTC) loss and a beam search mechanism for predicting phonemes </li>
+                            <li> Code can be found <a href="https://github.com/utkarshsimha/dnn-speech-recognition" >here</a> </li>
+                        </ul>
+                    </li>
+<!--                     <li>
+                        <h4> Standards based integration of Advanced Key Management Capabilities with Openstack </h4>
+                        <ul>
+                            <li> The project aims at integrating Openstack and enterprise key lifecylce managers, such as IBM Security Key Lifecycle Manager (IBM SKLM), using standardized protocols such as Key Management Interoperability Protocol (KMIP) </li>
+                            <li> Used a server-side plugin architecture to translate KMIP requests received by Barbican (the key manager for Openstack) and delegate it to any enterprise key lifecycle manager that has been interfaced</li>
+                            <li> Successfully demonstrated an end-to-end scenario for important key operations. Submitted and presented a white paper based on the project at IEEE International Conference on Cloud Computing and Emerging Markets 2015 which was accepted for poster presentation </li>
+                            <li> Link to paper can be found <a target="_blank" href="http://ieeexplore.ieee.org/document/7436938/"> here </a> </li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div id="other-projects" class="row">
+                <br/><br/>
+                <h3> Personal Projects </h3>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4> Acoustic Embeddings for speech recognition </h4>
+                        Built a Variational Autoencoder to construct acoustic embeddings at a word level for the task of speech recognition. The embeddings tries to map acoustically similar words together. This can be used to improve the performance of the speech recognizer in noisy environments. Code for this can be found <a href="https://github.com/utkarshsimha/deep-learning/blob/master/tf_acoustic_embeddings.py">here.</a>
+                    </li>
+                    <li>
+                        <h4> Adversarial Expamples on Inception </h4>
+                        Constructed adversarial examples which try to <i>fool</i> the Inception model, based on <a href="http://www.anishathalye.com/2017/07/25/synthesizing-adversarial-examples/">this</a> blog. The iPython notebook for this can be found <a href="https://github.com/utkarshsimha/adversarial-examples">here. </a> <br/>
+                        Plan to improve this by making it robust to transformations, and also build a tutorial in PyTorch.
+                    </li>
+                    <li>
+                        <h4> Northern Lights: A Simple Personal Assistant </h4>
+                        Built a simple personal assistant by stitching together multiple APIs available. 
+                        This uses <i>Snowboy from kitt.ai</i> for hotword detection, <i>Google Speech Recognition</i> (online) and <i>CMU Sphinx</i> (offline) for speech recognition, <i>Stanford NLP</i> for performing some basic NER tagging and <i>Wolfram API</i> for knowledge querying
+                        Plan to improve it in the future by adding face and voice fingerprinting for personalization, as well as intent mining and NLU to provide more functionality.
+                    </li>
+                </ul>
             </div>
 
             <div id="hobbies" class="row">
